@@ -3,7 +3,7 @@ package com.ahsieh02.collection.object;
 public class Customer {
 
     private boolean hasBeenServed;
-    private String name;
+    private final String name;
 
     public Customer(String name) {
         this.name = name;

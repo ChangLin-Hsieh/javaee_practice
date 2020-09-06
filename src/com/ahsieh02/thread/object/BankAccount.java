@@ -2,9 +2,10 @@ package com.ahsieh02.thread.object;
 
 public class BankAccount {
 
-    private int balance =0;
+    private int balance = 0;
     private final int overdraft;
-    private String accountName;
+    private final String accountName;
+
     public BankAccount(int overdraft, String accountName) {
         this.overdraft = overdraft;
         this.accountName = accountName;

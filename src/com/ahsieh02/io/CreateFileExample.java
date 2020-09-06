@@ -10,7 +10,7 @@ public class CreateFileExample {
         try {
             Boolean result = file.createNewFile();
             System.out.println("result " + result);
-            System.out.println("file path "  +file.getAbsoluteFile());
+            System.out.println("file path " + file.getAbsoluteFile());
         } catch (IOException e) {
             e.printStackTrace();
         }

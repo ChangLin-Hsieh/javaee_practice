@@ -16,8 +16,8 @@ public class GenericList {
         List person = new ArrayList();
         person.add("Kelly");
         person.add(20);
-        String name = (String)person.get(0);
-        Integer age = (Integer)person.get(1);
+        String name = (String) person.get(0);
+        Integer age = (Integer) person.get(1);
         System.out.println(name + "'s age is " + age);
     }
 

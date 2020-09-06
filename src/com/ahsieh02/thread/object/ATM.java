@@ -2,11 +2,11 @@ package com.ahsieh02.thread.object;
 
 public class ATM {
 
-    private static Object lock = new Object();
+    private static final Object lock = new Object();
 
     public static void basicWithdraw(BankAccount account, int amount) {
         int balance = account.getBalance();
-        if ((balance - amount) < - account.getOverdraft()) {
+        if ((balance - amount) < -account.getOverdraft()) {
             System.out.println("Transaction denied! AccountName[" + account.getAccountName() + "]");
         } else {
             account.debit(amount);
@@ -17,7 +17,7 @@ public class ATM {
 
     public synchronized static void synchronizedWithdraw(BankAccount account, int amount) {
         int balance = account.getBalance();
-        if ((balance - amount) < - account.getOverdraft()) {
+        if ((balance - amount) < -account.getOverdraft()) {
             System.out.println("Transaction denied! AccountName[" + account.getAccountName() + "]");
         } else {
             account.debit(amount);
@@ -26,7 +26,7 @@ public class ATM {
         System.out.println("AccountName[" + account.getAccountName() + "] Current Balance: $" + account.getBalance());
     }
 
-    public  static void synchronizedWithdrawObject(BankAccount account, int amount) {
+    public static void synchronizedWithdrawObject(BankAccount account, int amount) {
 
         synchronized (lock) {
             int balance = account.getBalance();

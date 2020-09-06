@@ -1,8 +1,8 @@
 package com.ahsieh02.stream.object;
 
 public class Book {
-    private String author;
-    private String title;
+    private final String author;
+    private final String title;
 
     public Book(String title, String author) {
         this.author = author;

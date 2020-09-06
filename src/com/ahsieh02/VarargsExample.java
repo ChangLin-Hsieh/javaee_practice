@@ -22,7 +22,7 @@ public class VarargsExample {
         varargsExample(a);
     }
 
-    public static <T> T[] convertTo(Class<T>dataType,  Object[] objects) {
+    public static <T> T[] convertTo(Class<T> dataType, Object[] objects) {
         T[] result = (T[]) java.lang.reflect.Array.newInstance(dataType, objects.length);
         for (int i = 0; i < objects.length; i++) {
             result[i] = (T) objects[i];
@@ -32,7 +32,7 @@ public class VarargsExample {
 
     public static void varargsExample(String... items) {
         System.out.println("--staring--");
-        for(String item : items) {
+        for (String item : items) {
             System.out.println(item);
         }
         System.out.println("--ending--\n");

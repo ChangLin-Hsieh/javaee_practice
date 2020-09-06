@@ -1,9 +1,9 @@
 package com.ahsieh02.io.object;
 
 public class Person {
-    private String name;
-    private int age;
-    private long phoneNumber;
+    private final String name;
+    private final int age;
+    private final long phoneNumber;
 
     public Person(String name, int age, long phoneNumber) {
         this.name = name;

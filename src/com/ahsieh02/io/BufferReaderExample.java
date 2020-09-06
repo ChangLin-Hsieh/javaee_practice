@@ -1,6 +1,9 @@
 package com.ahsieh02.io;
 
-import java.io.*;
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileReader;
+import java.io.IOException;
 
 public class BufferReaderExample {
 
@@ -15,7 +18,6 @@ public class BufferReaderExample {
         } catch (IOException e) {
             System.out.println(e.getMessage());
         }
-
 
 
     }

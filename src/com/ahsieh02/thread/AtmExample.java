@@ -68,7 +68,7 @@ public class AtmExample {
 
     private static Thread getBasicThread() {
         return new Thread(() -> {
-            for (int i = 0; i < 5 ; i++) {
+            for (int i = 0; i < 5; i++) {
                 ATM.basicWithdraw(account, 2);
             }
         });
@@ -98,7 +98,7 @@ public class AtmExample {
 
     private static Thread getSynchronizedMethodThread() {
         return new Thread(() -> {
-            for (int i = 0; i < 5 ; i++) {
+            for (int i = 0; i < 5; i++) {
                 ATM.synchronizedWithdraw(account1, 2);
             }
         });
@@ -128,7 +128,7 @@ public class AtmExample {
 
     private static Thread getSynchronizedObjectThread() {
         return new Thread(() -> {
-            for (int i = 0; i < 5 ; i++) {
+            for (int i = 0; i < 5; i++) {
                 ATM.synchronizedWithdraw(account2, 2);
             }
         });

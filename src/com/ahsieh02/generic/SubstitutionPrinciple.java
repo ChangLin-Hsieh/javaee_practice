@@ -31,7 +31,7 @@ public class SubstitutionPrinciple {
      */
     private static void printBuildings(List<? extends Building> buildings) {
         System.out.println("-----start printBuildings-----");
-        for(Building building : buildings) {
+        for (Building building : buildings) {
             System.out.println("building  " + building);
         }
         System.out.println("-----end printBuildings-----");

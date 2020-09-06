@@ -19,7 +19,7 @@ public class GreetingMessageImplement {
         greetingMessage.greet("Jeff");
 
         //implement Greeting message by lambda
-        GreetingMessage greetingMessageWithLambda =  (String name) -> {
+        GreetingMessage greetingMessageWithLambda = (String name) -> {
             System.out.println("hello " + name);
         };
         greetingMessageWithLambda.greet("Richard");

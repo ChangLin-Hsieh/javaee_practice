@@ -9,7 +9,7 @@ public class GenericMethod {
 
     public static <T> List<T> arrayToList(T[] array) {
         List<T> result = new ArrayList<>();
-        for(T object : array) {
+        for (T object : array) {
             result.add(object);
         }
         return result;
